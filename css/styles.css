@@ -94,7 +94,7 @@ textarea{
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 button{
-    width: 50%;
+    width: 100%;
     height: 45px;
     background-color: #79cd7d;
     color: white;
@@ -107,7 +107,6 @@ button{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #b2f7b2;
 }
 .h1PRDTCS{
     margin-top: 110px;
