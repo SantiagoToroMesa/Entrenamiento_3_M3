@@ -54,6 +54,22 @@ async function addproduct() {
         });
     }
 }
+async function deleteProduct(product_id) {
+    console.log("Eliminando producto con ID:", product_id);
+    try {
+        await fetch(`http://localhost:3000/Products/${product_id}`, {
+            method: 'DELETE',
+        })
+        getProductlist()
+    } catch (error) {
+        console.error(`Error al eliminar el producto: ${error}`);
+        swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'No se pudo eliminar el producto'
+        });
+    }
+}
 async function getProductlist() {
     let products = [];
     try {
@@ -67,9 +83,9 @@ async function getProductlist() {
         for (let product of products) {
             html += `<article class="productCard">
                 <h2 class="productName">${product.name}</h2>
-                <p class="productPrice">${product.price}</p>
+                <p class="productPrice">$${product.price}</p>
                 <p class="productDescription">${product.description}</p>
-                <button class="DeleteButton">Eliminar</button>
+                <button  onclick="deleteProduct(${product.id})">Eliminar</button>
             </article>`;
         }
         productList.innerHTML = html;

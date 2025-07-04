@@ -56,7 +56,7 @@ body{
 }
 .add-product-container{
     background-color: rgba(255, 255, 255, 0.8);
-    margin-top: 105px;
+    margin-top: 130px;
     gap: 20px;
     padding: 10px 20px;%;
     width: 550px;
@@ -67,6 +67,11 @@ body{
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.add-product-container:hover{
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    scale: 1.02;
+    transition: scale 0.3s ease, box-shadow 0.3s ease;
 }
 .add-product-form{
     display: flex;
@@ -101,6 +106,10 @@ button{
     font-weight: bold;
     font-size: 1rem;
 }
+button:hover{
+    background-color: #549e54;
+    cursor: pointer;
+}
 .productsContainer{
     width: 100%;
     display: flex;
@@ -129,6 +138,11 @@ button{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+.productCard:hover{
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    scale: 1.02;
+    transition: scale 0.3s ease, box-shadow 0.3s ease;
 }
 label{
     font-size: 1.4rem;
