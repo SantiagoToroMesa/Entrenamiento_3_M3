@@ -29,6 +29,18 @@
       "name": "Tablet",
       "price": 499.99,
       "description": "A versatile tablet with a high-resolution display and long battery life."
+    },
+    {
+      "id": "6",
+      "name": "televisor",
+      "price": "5000",
+      "description": "werwer"
+    },
+    {
+      "id": "7",
+      "name": "consola",
+      "price": "4688",
+      "description": "try"
     }
   ]
 }

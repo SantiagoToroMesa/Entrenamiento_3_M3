@@ -62,6 +62,7 @@ async function getProductlist() {
         products = data;
         console.log("Get", data);
         let productList = document.getElementById("productsContainer");
+        if (!productList) return;
         let html = "";
         for (let product of products) {
             html += `<article class="productCard">
@@ -81,5 +82,6 @@ async function getProductlist() {
         });
     }
 }
-AddProductButton.addEventListener("click", addproduct);
 getProductlist()
+AddProductButton.addEventListener("click", addproduct);
+
