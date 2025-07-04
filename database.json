@@ -1,12 +1,11 @@
 {
-  "Products":[
+  "Products": [
     {
       "id": "1",
       "name": "Laptop",
       "price": 999.99,
       "description": "A high-performance laptop with 16GB RAM and 512GB SSD."
-    }
-    ,
+    },
     {
       "id": "2",
       "name": "Smartphone",
@@ -18,15 +17,13 @@
       "name": "Headphones",
       "price": 199.99,
       "description": "Noise-cancelling headphones with superior sound quality."
-    }
-    ,
+    },
     {
       "id": "4",
       "name": "Smartwatch",
       "price": 249.99,
       "description": "A smartwatch with fitness tracking and customizable watch faces."
-    }
-    ,
+    },
     {
       "id": "5",
       "name": "Tablet",
