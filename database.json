@@ -1,34 +1,22 @@
 {
   "Products": [
     {
-      "id": "1",
-      "name": "Laptop",
-      "price": 999.99,
-      "description": "A high-performance laptop with 16GB RAM and 512GB SSD."
-    },
-    {
       "id": "2",
-      "name": "Smartphone",
-      "price": 699.99,
-      "description": "A latest model smartphone with a stunning camera and long battery life."
-    },
-    {
-      "id": "3",
       "name": "Headphones",
       "price": 199.99,
       "description": "Noise-cancelling headphones with superior sound quality."
     },
     {
-      "id": "4",
+      "id": "3",
       "name": "Smartwatch",
-      "price": 249.99,
+      "price": "249.99",
       "description": "A smartwatch with fitness tracking and customizable watch faces."
     },
     {
-      "id": "5",
-      "name": "Tablet",
-      "price": 499.99,
-      "description": "A versatile tablet with a high-resolution display and long battery life."
+      "id": "4",
+      "name": "console",
+      "price": "4000",
+      "description": "A gaming console with 4K support and a large library of games."
     }
   ]
 }

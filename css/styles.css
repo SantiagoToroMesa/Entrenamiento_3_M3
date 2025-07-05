@@ -23,6 +23,7 @@ header{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
+    index: 1000;
 }
 header > div {
     display: flex;
@@ -50,23 +51,22 @@ nav a:hover{
 body{
     background: #b2f7b2;
     background: linear-gradient(90deg, rgba(178, 247, 178, 1) 0%, rgba(106, 196, 163, 1) 50%, rgba(222, 212, 140, 1) 100%);
-    display: flex;
-    justify-content:  center;
-    align-items: center;
 }
 .add-product-container{
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 130px;
     gap: 20px;
-    padding: 10px 20px;%;
+    padding: 10px 20px;
     width: 550px;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
 }
 .add-product-container:hover{
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
@@ -88,6 +88,10 @@ input{
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+input:focus{
+    border: 1.5px solid #79cd7d;
+    outline: none;
 }
 textarea{
     width: 100%;
@@ -138,11 +142,13 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    index: 0;
 }
 .productCard:hover{
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     scale: 1.02;
     transition: scale 0.3s ease, box-shadow 0.3s ease;
+    index: 0;
 }
 
 label{
@@ -154,4 +160,54 @@ label{
 .Title{
     font-size: 1.3rem;
     text-align: center;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 40vh;
+}
+#search-form {
+    background: rgba(255,255,255,0.9);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+#input-buscador {
+    width: 300px;
+    height: 45px;
+    padding: 0 16px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #b2f7b2;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    transition: border 0.2s;
+}
+#input-buscador:focus {
+    border: 1.5px solid #79cd7d;
+    outline: none;
+}
+#search-form button {
+    width: 120px;
+    height: 45px;
+    border-radius: 8px;
+    background: #79cd7d;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#search-form button:hover {
+    background: #549e54;
+}
+.P1PRDTCS{
+    text-align: center;
+    font-size: 1.5rem;
 }
